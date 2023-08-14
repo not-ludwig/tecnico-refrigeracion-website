@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow&family=PT+Sans&display=swap');
+
+:root{
+    --dark: #2b2d42;
+    --light: #adb5bd;
+    --border: #dee2e6;
+    --border-btn: #edf2f4;
+}
+
+
+.fondo {
+    width: 320px;
+    height: 420px;
+    background: #000;
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    box-sizing: border-box;
+    padding: 70px 30px;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+#button {
+    color: #fff;
+    border: none;
+    background: linear-gradient(to right, #cb232c, #1f233e);
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.inp{
+    margin: 8px;
+    z-index: 1;
+    border: none;
+    border-bottom: 1px solid white;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: white;
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    font-family: 'PT Sans', sans-serif;
+}
+
+.container{
+    max-width: 1024px;
+    margin: auto;
+}
+
+.nav-brand{
+    font-size: 1.5em;
+    font-weight: bold;
+    color: white;
+}
+
+.d-flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.justify-between{
+    justify-content: space-between;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.border-shadow{
+    border: 1px solid var(--border-btn);
+    box-shadow: 1px 3px 10px #e9ecef;
+    background-color: white;
+    text-align: center;
+    margin-left: 818px;
+}
+
+.border-shadow2{
+    border: 1px solid var(--border-btn);
+    box-shadow: 1px 3px 10px #e9ecef;
+    background-color: white;
+    margin-bottom: -72px;
+    margin-top: 50px;
+}
+
+.text-dark{
+    color: var(--dark);
+}
+
+.inline{
+    display: inline-block;
+}
+
+.text-light{
+    color: black;
+}
+
+.text-gradient{
+    background-color: white;
+    background: linear-gradient(to right, #8e2de2, #1f233e);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#header nav{
+    background-color: #1f233e;
+    padding: 1em 0;
+    width: 100%;
+}
+
+#site-main{
+    margin-top: 6em;
+    font-family: 'Barlow', sans-serif;
+}
+
+.box-nav > div {
+    display: inline-block;
+}
+
+.left{
+    text-align: center;
+    width: 20%;
+}
+
+.center{
+    text-align: center;
+    margin-left: 225px;
+    width: 59%;
+}
+
+.right{
+    text-align: rig;
+    width: 20%;
+}
+
+#site-main .container .box-nav > a{
+    font-size: 1em;
+    padding: .5em 1em;
+}
+
+#site-main .container form{
+    margin: 2em 0;
+    overflow-x: auto;
+}
+
+table{
+    border-spacing: 0px;
+    width: 100%;
+    
+}
+
+.table td, .table th{
+    padding: .75em;
+    vertical-align: top;
+    text-align: center;
+    border-top: 1px solid var(--border);
+}
+
+i{
+    margin:4px;
+    padding:8px;
+}
+
+.table td > a.btn{
+    padding: .3em 1em;
+    font-size: 1.1em;
+    margin: 0 .2em;
+    cursor: pointer;
+}
+
+.table tr:hover{
+    background-color:#ced5df ;
+}
+
+.table tr:hover td > a{
+    box-shadow: none;
+    background-color: white;
+}
+
+.table .thead-dark th{
+    color: #fff;
+    background-color: var(--dark) ;
+    border-color: #32383e;
+}
+
+@media only screen and (max-width: 1024px){
+    table, thead, tbody, th, td, tr{
+        display: block;
+    }
+
+    thead tr{
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    tr { border: 1px solid var(--border);}
+
+    td{
+        border: none;
+        position: relative;
+    }
+}
+
+/*CSS de Agregar y Modificar Trailer*/
+.form-title{
+    margin-top: 2em;
+}
+
+.form-title > h2{
+    padding: .5em 0;
+}
+
+.new_user{
+    max-width: 786px;
+    margin: auto;
+}
+
+#update_user .form-group,
+#add_user .form-group{
+    margin: .4em 0;
+}
+
+#update_user .form-group input[type="text"],
+#update_user .form-group input[type="number"],
+#add_user .form-group input[type="text"],
+#add_user .form-group input[type="number"]{
+    width: 100%;
+    padding: .6em 1em;
+    margin: .5em 0;
+    border: 1px solid var(--border);
+    font-family: 'Barlow', sans-serif;
+    font-size: 1em;
+    border-radius: .2em;
+}
+
+#update_user .form-group .btn,
+#add_user .form-group .btn{
+    width: 100%;
+    padding: .9em 1em;
+    background-color:#1f233e ; 
+    border: none;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: .2em;
+    margin: .5em 0;
+}
+
+#update_user .form-group .btn:hover,
+#add_user .form-group .btn:hover{
+    background-color: var(--dark);
+    color: var(--border);
+}
+
+.bt{
+    background-color: #1f233e;
+    color: white;
+    border: none;
+    font-family: 'PT Sans', sans-serif;
+    cursor: pointer;
+    border-radius: .2em;
+    margin: 5px;
+    width: 25%;
+    padding: .9em 1em;
+}
+
+.in{
+    font-family: 'PT Sans', sans-serif;
+    border-radius: .2em;
+    margin: 5px;
+    width: 60%;
+    padding: .9em 1em;
+}
